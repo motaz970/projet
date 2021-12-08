@@ -1,0 +1,28 @@
+{
+  "name": "projet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "npm install --prefix frontend",
+    "start": "nodemon server.js ",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@sentry/node": "^6.13.2",
+    "body-parser": "^1.19.0",
+    "concurrently": "^6.2.2",
+    "cors": "^2.8.5",
+    "debug": "^4.3.3",
+    "express": "^4.17.1",
+    "mogoose": "0.0.1-security",
+    "mongo": "^0.1.0",
+    "mongoose": "^6.1.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15"
+  }
+}
